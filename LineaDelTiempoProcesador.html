@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Microprocesador</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0c0a09; /* Stone 950 */
+            /* Subtle background pattern */
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ca8a04' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Ensure images in cards don't distort */
+        .timeline-card-image {
+            width: 100%;
+            height: 250px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, cropping if necessary */
+            background-color: #1c1917; /* Fallback color */
+        }
+    </style>
+</head>
+<body class="text-stone-300">
+
+    <!-- Header Section -->
+    <div class="container mx-auto px-6 py-16 text-center">
+        <p class="text-lg md:text-xl text-stone-400 max-w-3xl mx-auto">
+            Autores: 
+        <p class="text-lg md:text-xl text-stone-400 max-w-3xl mx-auto">
+            Alonso Arroyave Muñoz
+        </p>
+        <p class="text-lg md:text-xl text-stone-400 max-w-3xl mx-auto">
+            Yhonatan Echeverri Londoño.
+        </p>
+        <br>
+        <h1 class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500 mb-4">
+            La Evolución del Microprocesador
+        </h1>
+        <p class="text-lg md:text-xl text-stone-400 max-w-3xl mx-auto">
+            Un viaje visual a través de los hitos que definieron la arquitectura de la computación moderna.
+        </p>
+        <p class="text-sm text-stone-500 max-w-3xl mx-auto mt-2">
+            
+        </p>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="container mx-auto px-6 py-8">
+        <div class="relative wrap overflow-hidden h-full">
+            <!-- Central Line -->
+            <div class="border-2-2 absolute border-opacity-20 border-stone-700 h-full border" style="left: 50%"></div>
+
+            <!-- DECADE 1970 -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-amber-400">Década de 1970</h2>
+                <p class="text-stone-500">El Nacimiento del Microprocesador</p>
+            </div>
+
+            <!-- Right Item: Intel 4004 -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_C4004.jpg" alt="Intel 4004" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+4004';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1971: Intel 4004 💡</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Es considerado el primer microprocesador comercial del mundo. Fue un procesador de 4 bits diseñado originalmente para una calculadora japonesa (Busicom).</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Demostró que una CPU completa podía integrarse en un solo chip, sentando las bases para la computación personal.</p>
+                </div>
+            </div>
+
+            <!-- Left Item: Intel 8008 -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_C8008.jpg" alt="Intel 8008" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+8008';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1972: Intel 8008</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Fue el primer microprocesador de 8 bits. Aunque más potente que el 4004, su arquitectura aún era limitada.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Duplicó el ancho de bus, permitiendo procesar más datos y abriendo la puerta a aplicaciones más complejas.</p>
+                </div>
+            </div>
+
+            <!-- Right Item: Intel 8080 -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Intel_C8080A_9064_33001_N8384_top.jpg" alt="Intel 8080" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/1000x250/1c1917/ca8a04?text=Intel+8080';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1974: Intel 8080 y Motorola 6800</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> El Intel 8080 se convirtió en el cerebro de la Altair 8800, inspirando a los fundadores de Microsoft. El Motorola 6800 estableció una arquitectura base para futuros procesadores.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Más potentes y fáciles de usar, fueron fundamentales para los primeros ordenadores personales.</p>
+                </div>
+            </div>
+            
+            <!-- Left Item: Intel 8086/8088 -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/KL_Intel_D8086.jpg" alt="Intel 8086/8088" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+8086';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1978: Intel 8086/8088 🖥️</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> El 8086 introdujo la arquitectura x86 de 16 bits. Su versión económica, el 8088, fue elegida por IBM para su primer PC.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> La arquitectura x86 se convirtió en el estándar de facto para la computación de escritorio.</p>
+                </div>
+            </div>
+
+            <!-- DECADE 1980 -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-amber-400">Década de 1980</h2>
+                <p class="text-stone-500">La Era de la Computación Personal y RISC</p>
+            </div>
+
+            <!-- Right Item: Intel 80286 -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Intel_80286-10.jpg" alt="Intel 80286" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+80286';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1982: Intel 80286</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Introdujo el modo protegido, permitiendo la multitarea real al gestionar la memoria de forma más segura y avanzada.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Separó el funcionamiento del procesador en "modos", un concepto crucial para los sistemas operativos modernos.</p>
+                </div>
+            </div>
+            
+            <!-- Left Item: Intel 80386 -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Intel_A80386DX-25.jpg" alt="Intel 80386" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+80386';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1985: Intel 80386 (i386)</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Fue el primer procesador de 32 bits de la familia x86, direccionando hasta 4 GB de memoria.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> La arquitectura de 32 bits (IA-32) se mantuvo como estándar por casi 20 años, permitiendo SO gráficos complejos.</p>
+                </div>
+            </div>
+
+            <!-- Right Item: ARM -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://www.cpushack.com/wp-content/uploads/2010/03/VLSIVL2333-QC-ARM-ACORN.jpg" alt="ARM Architecture" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=ARM+Processor';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1985: Nace la Arquitectura ARM</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Acorn Computers desarrolla el "Acorn RISC Machine" (ARM), basado en una filosofía de diseño RISC (Conjunto de Instrucciones Reducido).</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Su enfoque en instrucciones simples y de bajo consumo es la razón por la que ARM domina hoy el mercado móvil.</p>
+                </div>
+            </div>
+
+            <!-- DECADE 1990 -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-amber-400">Década de 1990</h2>
+                <p class="text-stone-500">La Explosión de la Velocidad y Multimedia</p>
+            </div>
+
+            <!-- Left Item: Pentium -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/KL_Intel_Pentium_A80501.jpg" alt="Intel Pentium" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+Pentium';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1993: Intel Pentium 🚀</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Rompió con la nomenclatura "80x86" e introdujo una arquitectura superescalar, capaz de ejecutar más de una instrucción por ciclo de reloj.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Marcó un salto masivo en rendimiento, haciendo posibles las aplicaciones multimedia en los PC de consumo.</p>
+                </div>
+            </div>
+
+            <!-- Right Item: Pentium Pro -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Pentium_Pro-200.jpg" alt="Intel Pentium Pro" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Intel+Pentium+Pro';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">1995: Intel Pentium Pro</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Introdujo la arquitectura P6 (ejecución fuera de orden) y la caché L2 integrada, optimizando el rendimiento de manera espectacular.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Estos conceptos se convirtieron en la base de todos los procesadores de alto rendimiento posteriores.</p>
+                </div>
+            </div>
+
+            <!-- DECADE 2000 -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-amber-400">Década de 2000</h2>
+                <p class="text-stone-500">El Salto a los 64 Bits y Múltiples Núcleos</p>
+            </div>
+
+            <!-- Left Item: Athlon 64 -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/AMD_Athlon_64_X2_4200%2B_%28ADA4200DAA5CD%29.jpg" alt="AMD Athlon 64" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=AMD+Athlon+64';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">2003: AMD Athlon 64 / Opteron</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> AMD se adelanta a Intel al lanzar la primera arquitectura de 64 bits para consumo, llamada x86-64 (o AMD64).</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Resolvió la limitación de 4 GB de memoria de los sistemas de 32 bits y se convirtió en el nuevo estándar.</p>
+                </div>
+            </div>
+
+            <!-- Right Item: Dual Core -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Intel_Core_2_Duo_E6750.jpg" alt="Dual Core Processor Die" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Dual-Core+Die';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">2005: Intel Pentium D y AMD Athlon 64 X2 ⚙️⚙️</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Fueron los primeros procesadores de doble núcleo (dual-core) para el mercado masivo.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> La industria giró hacia el paralelismo, incluyendo múltiples núcleos en un solo chip para mejorar la multitarea.</p>
+                </div>
+            </div>
+
+            <!-- DECADE 2010 - NOW -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-amber-400">De 2010 a la Actualidad</h2>
+                <p class="text-stone-500">Especialización y Tecnologías Disruptivas</p>
+            </div>
+
+             <!-- Left Item: Sandy Bridge -->
+            <div class="mb-8 flex justify-between md:flex-row-reverse items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Intel_i5-2500.jpg" alt="Intel Sandy Bridge die" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Sandy+Bridge+Die';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">2011: Intel Core (Arquitectura Sandy Bridge)</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Integró por primera vez la GPU (Unidad de Procesamiento Gráfico) dentro del mismo chip que la CPU.</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Dio lugar a los SoC (System on a Chip) en el mundo PC, mejorando drásticamente el rendimiento gráfico integrado.</p>
+                </div>
+            </div>
+
+            <!-- Right Item: Present -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 md:w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-stone-800 shadow-xl w-8 h-8 rounded-full">
+                    <div class="mx-auto bg-amber-500 h-3 w-3 rounded-full"></div>
+                </div>
+                <div class="order-1 bg-stone-900 border border-stone-800 rounded-lg shadow-xl w-full md:w-5/12 p-6 transition-transform duration-300 hover:scale-105 hover:shadow-amber-500/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Apple_M1.jpg" alt="Modern SoC like Apple M1" class="timeline-card-image rounded-md mb-4 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/800x250/1c1917/ca8a04?text=Apple+M1+SoC';">
+                    <h3 class="font-bold text-xl text-amber-400 mb-2">Presente: Arquitecturas Heterogéneas y Aceleración por IA 🧠</h3>
+                    <p class="text-sm leading-relaxed"><strong class="font-semibold text-stone-100">Hito:</strong> Los procesadores modernos (serie M de Apple, Intel Core recientes) usan núcleos de alto rendimiento y de alta eficiencia, además de hardware especializado como las NPU (Unidades de Procesamiento Neuronal).</p>
+                    <p class="text-sm leading-relaxed mt-2"><strong class="font-semibold text-stone-100">Impacto en la Arquitectura:</strong> Este enfoque busca la máxima eficiencia y rendimiento, acelerando tareas de IA directamente en el hardware.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
